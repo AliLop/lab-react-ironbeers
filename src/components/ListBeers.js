@@ -18,7 +18,7 @@ class ListBeers extends React.Component {
             }); 
     }
 
-    handlSearchBeer = (event) => {
+    handleSearchBeer = (event) => {
         const value = event.target.value;
         const beersService = new BeersService();
         beersService.searchBeer(value)
