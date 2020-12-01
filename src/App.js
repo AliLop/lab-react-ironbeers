@@ -11,6 +11,7 @@ function App() {
     <div className="App">
     <Navbar />
       <Switch>
+      {/* this order matters  */}
         <Route exact path='/beers' component={ListBeers} />
         <Route exact path='/beers/add' component={AddBeer} />
         <Route exact path='/beers/random' component={RandomBeer} />
